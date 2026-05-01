@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS edu_course;
+USE edu_course;
+
+CREATE TABLE IF NOT EXISTS courses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama_course VARCHAR(255) NOT NULL,
+    deskripsi TEXT,
+    harga INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
